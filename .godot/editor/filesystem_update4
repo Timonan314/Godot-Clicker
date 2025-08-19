@@ -1,0 +1,4 @@
+res://scenes/main.tscn
+res://scenes/combo_meter.gd
+res://scripts/global.gd
+res://scripts/icon.gd

@@ -5,7 +5,6 @@ var last_sec_clicks
 var click_stopped
 const angle_max = 20
 var angle = 0
-var manual_click_val = 1
 var clickable = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,7 +20,7 @@ func _process(_delta: float) -> void:
 func _input(_event: InputEvent) -> void:
 	if clickable == true:
 		if Input.is_action_just_pressed("click"):
-			Global.clicks += manual_click_val
+			Global.clicks += Global.click_val
 			var tweenclick = get_tree().create_tween()
 			animation_player.play("click")
 			tweenclick.tween_property($".", "rotation_degrees", angle, 0.06)
