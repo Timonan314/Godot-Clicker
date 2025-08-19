@@ -1,5 +1,5 @@
 extends Label
-@onready var bar: ColorRect = $bar
+@onready var bar: TextureRect = $bar
 var click_count = 0
 var last_sec_click = 0
 var mcps = 0
@@ -15,7 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var tween = get_tree().create_tween()
 	tween.tween_property(bar, "size:x", width, 0.25)
-	if Input.is_action_just_pressed("click"):
+	if Input.is_action_just_pressed("click") and Global.clickable == true:
 		click_count += 1
 
 func _on_mcps_timer_timeout() -> void:

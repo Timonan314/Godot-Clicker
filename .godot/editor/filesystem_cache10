@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755569510
+::res://::1755629913
 COMIC.TTF::FontFile/FontFile::881757879489302958::1755551562::1755565852::1::::<><><>0<>0<>5bc8bf93e078abaeec2b9a644dfcb8e7<>res://.godot/imported/COMIC.TTF-ce07abbc8babcf9a6989fd2d2a0089d9.fontdata::
+new_gradient.tres::Gradient::4228407409511206987::1755629913::0::1::::<><><>0<>0<><>::
 ::res://addons/::1755565852
 README.md::TextFile/TextFile::-1::1755546596::0::1::::<><><>0<>0<><>::
 wakatime_logo.jpg::CompressedTexture2D/CompressedTexture2D::6514287400269346764::1755546596::1755565852::1::::<><><>0<>0<>7250ddb0445ea21abcc65a2064ea6b54<>res://.godot/imported/wakatime_logo.jpg-f5943c8e382af3025e0116be421569a3.ctex::
@@ -12,9 +13,11 @@ wakatime.gd::GDScript/GDScript::6031095771943826507::1755546596::0::1::::<>Edito
 ::res://assets/::1755565852
 icon.png::CompressedTexture2D/CompressedTexture2D::579353075076767516::1755546596::1755565852::1::::<><><>0<>0<>ae904bbe9ed445e22580d5bb5ca3c0c5<>res://.godot/imported/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::4052471993311542477::1755541033::1755565852::1::::<><><>0<>0<>ebb8b582cb596df6b5a683785aae8736<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
-::res://scenes/::1755566637
-main.tscn::PackedScene/PackedScene::8159220841646780718::1755566637::0::1::::<><><>0<>0<><>::uid://dajrje2vacyt0::::res://scripts/panel.gd<>uid://mteonrh2rrl3::::res://COMIC.TTF<>uid://bx0bvevtwl5dx::::res://assets/icon.svg<>uid://bmyingsusxf0a::::res://scripts/icon.gd
-::res://scripts/::1755565038
-global.gd::GDScript/GDScript::3158713550789346508::1755553132::0::1::::<>Node<><>0<>0<><>::
-icon.gd::GDScript/GDScript::3278741168590073150::1755563867::0::1::::<>Sprite2D<><>0<>0<><>::
+::res://scenes/::1755631539
+combo_meter.gd::GDScript::528214729453333717::1755624924::0::1::::<>Label<><>0<>0<><>::
+main.tscn::PackedScene::8159220841646780718::1755631600::0::1::::<><><>0<>0<><>::uid://dajrje2vacyt0::::res://scripts/panel.gd<>uid://mteonrh2rrl3::::res://COMIC.TTF<>uid://bx0bvevtwl5dx::::res://assets/icon.svg<>uid://bmyingsusxf0a::::res://scripts/icon.gd<>uid://hr4vcbyr5hwn::::res://scenes/combo_meter.gd<>uid://b1ijituxtm1ox::::res://new_gradient.tres
+script.gd::GDScript::2513925482347429451::1755631525::0::1::::<>HBoxContainer<><>0<>0<><>::
+::res://scripts/::1755625948
+global.gd::GDScript::3158713550789346508::1755624907::0::1::::<>Node<><>0<>0<><>::
+icon.gd::GDScript::3278741168590073150::1755625948::0::1::::<>Sprite2D<><>0<>0<><>::
 panel.gd::GDScript/GDScript::7178889964645385839::1755565038::0::1::::<>Panel<><>0<>0<><>::

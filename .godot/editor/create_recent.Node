@@ -1,2 +1,10 @@
+TextureRect
+Button
+CPUParticles2D
+HBoxContainer
+VBoxContainer
+VScrollBar
+ScrollContainer
+Panel
 Timer
 ColorRect
