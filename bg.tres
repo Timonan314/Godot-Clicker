@@ -6,5 +6,6 @@ colors = PackedColorArray(5.77569e-07, 0.590756, 0.703746, 1, 0.340326, 0.001460
 
 [resource]
 gradient = SubResource("Gradient_dihi4")
-fill_from = Vector2(0, 1)
+fill_from = Vector2(0.517094, 1)
+fill_to = Vector2(0, 0)
 metadata/_snap_count = 12
