@@ -6,3 +6,5 @@ var combo_multiplier = 1
 var clickable = false
 var acps = 0 ##automatic clicks per second
 var max_combo = 4
+var combo_mult = 1
+var acv = 0 ##additional click value

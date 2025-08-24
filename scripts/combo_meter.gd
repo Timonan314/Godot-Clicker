@@ -15,6 +15,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	print(Global.combo_mult)
 	var tween = get_tree().create_tween()
 	tween.tween_property(bar, "size:x", width, 0.25)
 	if Input.is_action_just_pressed("click") and Global.clickable == true:
@@ -30,4 +31,4 @@ func _on_mcps_timer_timeout() -> void:
 		width = mcps * (400/Global.max_combo)
 	else:
 		width = 400
-	Global.click_val = ((mcps * Global.combo_multiplier)/4) + 1
+	Global.click_val = (mcps * Global.combo_mult) + 1 + Global.acv

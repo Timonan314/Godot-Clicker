@@ -70,9 +70,8 @@ var eight_val = 1
 var eight_prc = 5
 var eight_amt = 0
 
-var nine_val = 1
-var nine_prc = 5
-var nine_amt = 0
+var nine_prc = 1000000
+
 
 
 
@@ -96,17 +95,17 @@ func _ready() -> void:
 	three_3.text = str(three_prc, "
 	", three_amt, " Owned")
 
-	four_2.text = str("+", four_val, " Clicks
+	four_2.text = str("+", four_val, " Click
 	Value")
 	four_3.text = str(four_prc, "
 	", four_amt, " Owned")
 
-	five_2.text = str("+", five_val, " Clicks
+	five_2.text = str("+", five_val, " Click
 	Value")
 	five_3.text = str(five_prc, "
 	", five_amt, " Owned")
 
-	six_2.text = str("+", six_val, " Clicks
+	six_2.text = str("+", six_val, " Click
 	Value")
 	six_3.text = str(six_prc, "
 	", six_amt, " Owned")
@@ -142,26 +141,70 @@ func one():
 		", one_amt, " Owned")
 
 func two():
-	print("two")
+	if Global.clicks >= two_prc:
+		Global.clicks -= two_prc
+		Global.acps += two_val
+		two_amt += 1
+		two_val += 1
+		two_prc += two_prc/3
+		two_2.text = str("+", two_val, " Clicks
+		Per Second")
+		two_3.text = str(two_prc, "
+		", two_amt, " Owned")
 
 func three():
-	print("three")
+	if Global.clicks >= three_prc:
+		Global.clicks -= three_prc
+		Global.acps += three_val
+		three_amt += 1
+		three_val += 1
+		three_prc += three_prc/3
+		three_2.text = str("+", three_val, " Clicks
+		Per Second")
+		three_3.text = str(three_prc, "
+		", three_amt, " Owned")
 
 func four():
-	print("four")
+	if Global.clicks >= four_prc:
+		Global.clicks -= four_prc
+		Global.acv += four_val
+		four_amt += 1
+		four_val += 1
+		four_prc += four_prc/3
+		four_2.text = str("+", four_val, " Click
+		Value")
+		four_3.text = str(four_prc, "
+		", four_amt, " Owned")
 
 func five():
-	print("five")
+	if Global.clicks >= five_prc:
+		Global.clicks -= five_prc
+		Global.acv += five_val
+		five_amt += 1
+		five_val += 1
+		five_prc += five_prc/3
+		five_2.text = str("+", five_val, " Click
+		Value")
+		five_3.text = str(five_prc, "
+		", five_amt, " Owned")
 
 func six():
-	print("six")
+	if Global.clicks >= six_prc:
+		Global.clicks -= six_prc
+		Global.acv += six_val
+		six_amt += 1
+		six_val += 1
+		six_prc += six_prc/3
+		six_2.text = str("+", six_val, " Click
+		Value")
+		six_3.text = str(six_prc, "
+		", six_amt, " Owned")
 
 func seven():
 	if Global.clicks >= seven_prc:
 		Global.clicks -= seven_prc
 		Global.max_combo += seven_val
 		seven_amt += 1
-		seven_val += 1
 		seven_prc += seven_prc/3
 		seven_2.text = str("+", seven_val, "
 		Combo Max")
@@ -169,89 +212,81 @@ func seven():
 		", seven_amt, " Owned")
 
 func eight():
-	print("eight")
+	if Global.clicks >= eight_prc:
+		Global.clicks -= eight_prc
+		Global.combo_mult += eight_val
+		eight_amt += 1
+		eight_val += 1
+		eight_prc += eight_prc/3
+		eight_2.text = str("+", eight_val, " Combo
+		Mult")
+		eight_3.text = str(eight_prc, "
+		", eight_amt, " Owned")
 
 func nine():
-	print("nine")
+	if Global.clicks >= nine_prc:
+		Global.clicks = 0
+		Global.acps = 0
+		Global.max_combo = 4
+		Global.combo_mult = 1
+		Global.acv = 0
+		
+		one_val = 1
+		one_prc = 5
+		one_amt = 0
 
 func _on_button_pressed() -> void:
 	one()
-
 func _on_button_2_pressed() -> void:
 	one()
-
 func _on_button_3_pressed() -> void:
 	one()
-
 func _on_two_pressed() -> void:
 	two()
-
 func _on_two_2_pressed() -> void:
 	two()
-
 func _on_two_3_pressed() -> void:
 	two()
-
 func _on_three_pressed() -> void:
 	three()
-
 func _on_three_2_pressed() -> void:
 	three()
-
 func _on_three_3_pressed() -> void:
 	three()
-
 func _on_four_pressed() -> void:
 	four()
-
 func _on_four_2_pressed() -> void:
 	four()
-
 func _on_four_3_pressed() -> void:
 	four()
-
 func _on_five_pressed() -> void:
 	five()
-
 func _on_five_2_pressed() -> void:
 	five()
-
 func _on_five_3_pressed() -> void:
 	five()
-
 func _on_six_pressed() -> void:
 	six()
-
 func _on_six_2_pressed() -> void:
 	six()
-
 func _on_six_3_pressed() -> void:
 	six()
-
 func _on_seven_pressed() -> void:
 	seven()
-
 func _on_seven_2_pressed() -> void:
 	seven()
-
 func _on_seven_3_pressed() -> void:
 	seven()
-
 func _on_eight_pressed() -> void:
 	eight()
-
 func _on_eight_2_pressed() -> void:
 	eight()
-
 func _on_eight_3_pressed() -> void:
 	eight()
-
 func _on_nine_pressed() -> void:
 	nine()
-
 func _on_nine_2_pressed() -> void:
 	nine()
-
 func _on_nine_3_pressed() -> void:
 	nine()
 
