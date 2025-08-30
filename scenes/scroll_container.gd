@@ -130,6 +130,7 @@ func _process(delta: float) -> void:
 
 func one():
 	if Global.clicks >= one_prc:
+		Global.cs += one_prc
 		Global.clicks -= one_prc
 		Global.acps += one_val
 		one_amt += 1
@@ -142,6 +143,7 @@ func one():
 
 func two():
 	if Global.clicks >= two_prc:
+		Global.cs += two_prc
 		Global.clicks -= two_prc
 		Global.acps += two_val
 		two_amt += 1
@@ -154,6 +156,7 @@ func two():
 
 func three():
 	if Global.clicks >= three_prc:
+		Global.cs += three_prc
 		Global.clicks -= three_prc
 		Global.acps += three_val
 		three_amt += 1
@@ -166,6 +169,7 @@ func three():
 
 func four():
 	if Global.clicks >= four_prc:
+		Global.cs += four_prc
 		Global.clicks -= four_prc
 		Global.acv += four_val
 		four_amt += 1
@@ -178,6 +182,7 @@ func four():
 
 func five():
 	if Global.clicks >= five_prc:
+		Global.cs += five_prc
 		Global.clicks -= five_prc
 		Global.acv += five_val
 		five_amt += 1
@@ -190,6 +195,7 @@ func five():
 
 func six():
 	if Global.clicks >= six_prc:
+		Global.cs += six_prc
 		Global.clicks -= six_prc
 		Global.acv += six_val
 		six_amt += 1
@@ -202,6 +208,7 @@ func six():
 
 func seven():
 	if Global.clicks >= seven_prc:
+		Global.cs += seven_prc
 		Global.clicks -= seven_prc
 		Global.max_combo += seven_val
 		seven_amt += 1
@@ -213,6 +220,7 @@ func seven():
 
 func eight():
 	if Global.clicks >= eight_prc:
+		Global.cs += eight_prc
 		Global.clicks -= eight_prc
 		Global.combo_mult += eight_val
 		eight_amt += 1
@@ -225,6 +233,7 @@ func eight():
 
 func nine():
 	if Global.clicks >= nine_prc:
+		Global.cs += nine_prc
 		Global.clicks = 0
 		Global.acps = 0
 		Global.max_combo = 4

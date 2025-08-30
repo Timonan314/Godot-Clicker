@@ -1,12 +1,12 @@
+Panel
+VBoxContainer
+ScrollContainer
 Label
+Button
 ParallaxBackground
 CPUParticles2D
 Timer
-Panel
 TextureRect
-VBoxContainer
 HBoxContainer
-Button
 VScrollBar
-ScrollContainer
 ColorRect

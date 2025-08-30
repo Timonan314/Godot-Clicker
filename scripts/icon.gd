@@ -25,7 +25,9 @@ func _process(_delta: float) -> void:
 func _input(_event: InputEvent) -> void:
 	if Global.clickable == true:
 		if Input.is_action_just_pressed("click"):
+			Global.lc += Global.click_val
 			Global.clicks += Global.click_val
+			Global.lmc += 1
 			var tweenclick = get_tree().create_tween()
 			animation_player.play("click")
 			tweenclick.tween_property($".", "rotation_degrees", angle, 0.25)
