@@ -27,7 +27,6 @@ func _input(_event: InputEvent) -> void:
 	if Global.clickable == true:
 		if Input.is_action_just_pressed("click"):
 			cpu_particles_2d.emitting = true
-			Global.emittin = true
 			Global.lc += Global.click_val
 			Global.clicks += Global.click_val
 			Global.lmc += 1

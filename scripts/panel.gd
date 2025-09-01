@@ -7,7 +7,7 @@ extends Panel
 func _ready() -> void:
 	pass
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	clicks.text = str(Global.clicks)
 	cps_per_second.text = str(Global.cps, " Per Second")
 	

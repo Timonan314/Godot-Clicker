@@ -55,11 +55,11 @@ var four_prc = 5
 var four_amt = 0
 
 var five_val = 1
-var five_prc = 5
+var five_prc = 10
 var five_amt = 0
 
 var six_val = 1
-var six_prc = 5
+var six_prc = 15
 var six_amt = 0
 
 var seven_val = 1
@@ -70,7 +70,7 @@ var eight_val = 1
 var eight_prc = 5
 var eight_amt = 0
 
-var nine_prc = 1000000
+var nine_prc = 10000000
 
 
 
@@ -121,11 +121,11 @@ func _ready() -> void:
 	", eight_amt, " Owned")
 
 	nine_2.text = str("Game resets :D")
-	nine_3.text = str(nine_prc)
+	nine_3.text = str("10,000,000")
 
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 func one():
@@ -148,7 +148,7 @@ func two():
 		Global.acps += two_val
 		two_amt += 1
 		two_val += 1
-		two_prc += two_prc/3
+		two_prc += two_prc/2
 		two_2.text = str("+", two_val, " Clicks
 		Per Second")
 		two_3.text = str(two_prc, "
@@ -161,7 +161,7 @@ func three():
 		Global.acps += three_val
 		three_amt += 1
 		three_val += 1
-		three_prc += three_prc/3
+		three_prc += three_prc
 		three_2.text = str("+", three_val, " Clicks
 		Per Second")
 		three_3.text = str(three_prc, "
@@ -187,7 +187,7 @@ func five():
 		Global.acv += five_val
 		five_amt += 1
 		five_val += 1
-		five_prc += five_prc/3
+		five_prc += five_prc/2
 		five_2.text = str("+", five_val, " Click
 		Value")
 		five_3.text = str(five_prc, "
@@ -200,7 +200,7 @@ func six():
 		Global.acv += six_val
 		six_amt += 1
 		six_val += 1
-		six_prc += six_prc/3
+		six_prc += six_prc
 		six_2.text = str("+", six_val, " Click
 		Value")
 		six_3.text = str(six_prc, "
