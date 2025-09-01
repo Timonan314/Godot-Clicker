@@ -1,11 +1,11 @@
+CPUParticles2D
+Timer
 Panel
 VBoxContainer
 ScrollContainer
 Label
 Button
 ParallaxBackground
-CPUParticles2D
-Timer
 TextureRect
 HBoxContainer
 VScrollBar

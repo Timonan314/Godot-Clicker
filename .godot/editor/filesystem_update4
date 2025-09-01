@@ -1,3 +1,5 @@
 res://scenes/main.tscn
 res://bg.tres
-res://scenes/stats_button.gd
+res://scenes/cpu_particles_2d.gd
+res://scripts/icon.gd
+res://scenes/cpu_particles_2d_2.gd

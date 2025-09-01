@@ -1,6 +1,7 @@
 extends Sprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var cps_timer: Timer = $"cps timer"
+@onready var cpu_particles_2d: CPUParticles2D = $"../CPUParticles2D"
 
 var particle_amount = 0
 var last_sec_clicks
@@ -25,6 +26,8 @@ func _process(_delta: float) -> void:
 func _input(_event: InputEvent) -> void:
 	if Global.clickable == true:
 		if Input.is_action_just_pressed("click"):
+			cpu_particles_2d.emitting = true
+			Global.emittin = true
 			Global.lc += Global.click_val
 			Global.clicks += Global.click_val
 			Global.lmc += 1

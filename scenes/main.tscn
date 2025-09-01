@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://doinf7rp2onby"]
+[gd_scene load_steps=20 format=3 uid="uid://doinf7rp2onby"]
 
 [ext_resource type="Script" uid="uid://dajrje2vacyt0" path="res://scripts/panel.gd" id="1_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://dwqpdexu2c075" path="res://bg.tres" id="1_o6xl0"]
@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://hr4vcbyr5hwn" path="res://scripts/combo_meter.gd" id="5_tbgi4"]
 [ext_resource type="Gradient" uid="uid://b1ijituxtm1ox" path="res://new_gradient.tres" id="6_tefeu"]
 [ext_resource type="Script" uid="uid://cimaji8wmxqsb" path="res://scenes/stats_button.gd" id="9_85g3d"]
+[ext_resource type="Script" uid="uid://cal2dvmc5780r" path="res://scenes/cpu_particles_2d.gd" id="10_choun"]
+[ext_resource type="Script" uid="uid://ffmlvslh6v6w" path="res://scenes/cpu_particles_2d_2.gd" id="11_ya4ey"]
 
 [sub_resource type="Animation" id="Animation_lquwl"]
 length = 0.001
@@ -67,6 +69,14 @@ gradient = ExtResource("6_tefeu")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tipki"]
 bg_color = Color(0.0784314, 0, 0.0980392, 0.8)
+
+[sub_resource type="Curve" id="Curve_85g3d"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.495089), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_85g3d"]
+offsets = PackedFloat32Array(0, 0.473815, 0.82793, 1)
+colors = PackedColorArray(0, 1, 0.635294, 1, 0, 0, 1, 1, 0.712493, 0.00243311, 0.927866, 1, 1, 0, 0.52549, 1)
 
 [node name="Node2D" type="Node2D"]
 
@@ -491,6 +501,42 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 1
 
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(-6.10352e-05, -3.8147e-05)
+scale = Vector2(2.37032, 2.37032)
+emitting = false
+amount = 25
+lifetime = 0.75
+one_shot = true
+speed_scale = 1.65
+explosiveness = 0.85
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 20.0
+angle_max = 364.0
+scale_amount_min = 5.0
+scale_amount_max = 10.0
+scale_amount_curve = SubResource("Curve_85g3d")
+color_initial_ramp = SubResource("Gradient_85g3d")
+script = ExtResource("10_choun")
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2(-6.10352e-05, -3.8147e-05)
+scale = Vector2(2.37032, 2.37032)
+amount = 25
+lifetime = 0.75
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 20.0
+angle_max = 364.0
+scale_amount_min = 5.0
+scale_amount_max = 10.0
+scale_amount_curve = SubResource("Curve_85g3d")
+color_initial_ramp = SubResource("Gradient_85g3d")
+script = ExtResource("11_ya4ey")
+
 [connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player/Button" to="Panel/Panel/ScrollContainer" method="_on_button_pressed"]
 [connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player/Button2" to="Panel/Panel/ScrollContainer" method="_on_button_2_pressed"]
 [connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player/Button3" to="Panel/Panel/ScrollContainer" method="_on_button_3_pressed"]
@@ -522,3 +568,5 @@ autowrap_mode = 1
 [connection signal="timeout" from="Icon/cps timer" to="Icon" method="_on_timer_timeout"]
 [connection signal="timeout" from="Combo meter/mcps Timer" to="Combo meter" method="_on_mcps_timer_timeout"]
 [connection signal="pressed" from="Stats button" to="Stats button" method="_on_pressed"]
+[connection signal="finished" from="CPUParticles2D" to="CPUParticles2D" method="_on_finished"]
+[connection signal="finished" from="CPUParticles2D2" to="CPUParticles2D2" method="_on_finished"]

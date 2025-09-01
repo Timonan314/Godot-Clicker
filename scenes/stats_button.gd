@@ -10,7 +10,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	print(Global.stats_visible)
 	label.text = str("Upgrades:
 Combo Max = ", Global.max_combo,
 "

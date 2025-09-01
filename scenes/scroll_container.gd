@@ -42,12 +42,12 @@ var one_val = 1
 var one_prc = 5
 var one_amt = 0
 
-var two_val = 1
-var two_prc = 5
+var two_val = 2
+var two_prc = 10
 var two_amt = 0
 
-var three_val = 1
-var three_prc = 5
+var three_val = 4
+var three_prc = 15
 var three_amt = 0
 
 var four_val = 1

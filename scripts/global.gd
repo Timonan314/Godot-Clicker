@@ -11,3 +11,4 @@ var stats_visible = false
 var lc = 0##lifetime clicks
 var lmc = 0##lifetime Manual Clicks
 var cs = 0##clicks spent
+var emittin = false
