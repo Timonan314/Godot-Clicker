@@ -82,7 +82,6 @@ var nine_prc = 10000000
 
 
 
-
 func _ready() -> void:
 	acps_timer.start()
 
@@ -149,9 +148,75 @@ Game"
 
 
 
+
 func _process(_delta: float) -> void:
 	Global.clicks += float(Global.acps/60)
 	Global.lc += float(Global.acps/60)
+
+	button_1.text = "Add
+Player"
+	button_2.text = str("+", one_val, " Clicks
+	Per Second")
+	button_3.text = str(one_prc, "
+	", one_amt, " Owned")
+
+	two_1.text = "New
+Animation"
+	two_2.text = str("+", two_val, " Clicks
+	Per Second")
+	two_3.text = str(two_prc, "
+	", two_amt, " Owned")
+
+	three_1.text = "New
+Character"
+	three_2.text = str("+", three_val, " Clicks
+	Per Second")
+	three_3.text = str(three_prc, "
+	", three_amt, " Owned")
+
+	four_1.text = "New
+Mesh"
+	four_2.text = str("+", four_val, " Click
+	Value")
+	four_3.text = str(four_prc, "
+	", four_amt, " Owned")
+
+	five_1.text = "New
+Script"
+	five_2.text = str("+", five_val, " Click
+	Value")
+	five_3.text = str(five_prc, "
+	", five_amt, " Owned")
+
+	six_1.text = "New
+Level"
+	six_2.text = str("+", six_val, " Click
+	Value")
+	six_3.text = str(six_prc, "
+	", six_amt, " Owned")
+
+	seven_1.text = "New
+Texture"
+	seven_2.text = str("+", seven_val, "
+	Combo Max")
+	seven_3.text = str(seven_prc, "
+	", seven_amt, " Owned")
+
+	eight_1.text = "Do Some
+Debugging"
+	eight_2.text = str("+", eight_val, " Combo
+	Mult")
+	eight_3.text = str(eight_prc, "
+	", eight_amt, " Owned")
+
+	nine_1.text = "Publish
+Game"
+	nine_2.text = str("Game resets :D")
+	nine_3.text = str("10,000,000")
+
+
+
+
 
 func one():
 	if Global.clicks >= one_prc:
@@ -268,6 +333,41 @@ func nine():
 		one_val = 1
 		one_prc = 5
 		one_amt = 0
+		
+		two_val = 2
+		two_prc = 10
+		two_amt = 0
+		
+		three_val = 4
+		three_prc = 15
+		three_amt = 0
+		
+		four_val = 1
+		four_prc = 5
+		four_amt = 0
+		
+		five_val = 1
+		five_prc = 10
+		five_amt = 0
+		
+		six_val = 1
+		six_prc = 15
+		six_amt = 0
+		
+		seven_val = 1
+		seven_prc = 5
+		seven_amt = 0
+		
+		eight_val = 1
+		eight_prc = 5
+		eight_amt = 0
+		
+		nine_prc = 10000000
+
+
+
+
+
 
 func _on_button_pressed() -> void:
 	one()

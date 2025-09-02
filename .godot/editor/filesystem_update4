@@ -1,4 +1,3 @@
 res://scenes/main.tscn
 res://bg.tres
 res://scenes/scroll_container.gd
-res://scenes/stats_button.gd
