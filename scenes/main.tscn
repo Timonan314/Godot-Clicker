@@ -145,7 +145,7 @@ layout_mode = 0
 offset_left = 27.0
 offset_top = 79.0
 offset_right = 576.0
-offset_bottom = 489.0
+offset_bottom = 517.0
 script = ExtResource("4_tipki")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel/ScrollContainer"]
@@ -160,220 +160,410 @@ layout_mode = 2
 [node name="TextureRect" type="TextureRect" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Player" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player"]
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer/PanelContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
 text = "Add
-Player"
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Button2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player"]
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer/PanelContainer2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
 text = "+5 Clicks
-Per Second"
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Button3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player"]
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer/PanelContainer3"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
 text = "100
-0 Owned"
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Animation" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="two" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Animation"]
+[node name="Button" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "New
-Animation"
+text = "Click To Buy"
 
-[node name="two2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Animation"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
 text = "+5 Clicks
-Per Second"
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="two3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Animation"]
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer3"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "100,000
-0 Owned"
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Character" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="three" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Character"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_tbgi4")
-theme_override_font_sizes/font_size = 31
-text = "New
-Character"
-
-[node name="three2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Character"]
+[node name="Button2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "+10 Clicks
-Per Second"
+text = "Click To Buy"
 
-[node name="three3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Character"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "100,000
-0 Owned"
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Mesh" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 
-[node name="four" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Mesh"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_tbgi4")
-theme_override_font_sizes/font_size = 31
-text = "New
-Mesh"
-
-[node name="four2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Mesh"]
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "+5 Click
-Value"
+text = "+5 Clicks
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="four3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Mesh"]
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer3"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "100,000
-0 Owned"
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Script" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="five" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Script"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_tbgi4")
-theme_override_font_sizes/font_size = 31
-text = "New
-Script"
-
-[node name="five2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Script"]
+[node name="Button3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "+1 Click
-Value"
+text = "Click To Buy"
 
-[node name="five3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Script"]
+[node name="HBoxContainer5" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer5/PanelContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "100,000
-0 Owned"
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Level" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer5"]
 layout_mode = 2
 
-[node name="six" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Level"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_tbgi4")
-theme_override_font_sizes/font_size = 31
-text = "New
-Level"
-
-[node name="six2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Level"]
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer5/PanelContainer2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "+1 Click
-Value"
+text = "+5 Clicks
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="six3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Level"]
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer5/PanelContainer3"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "100,000
-0 Owned"
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Texture" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="seven" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Texture"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_tbgi4")
-theme_override_font_sizes/font_size = 31
-text = "New
-Texture"
-
-[node name="seven2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Texture"]
+[node name="Button4" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "+1
-Combo Max"
+text = "Click To Buy"
 
-[node name="seven3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Texture"]
+[node name="HBoxContainer6" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer6/PanelContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "100,000
-0 Owned"
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Debugging" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer6"]
 layout_mode = 2
 
-[node name="eight" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Debugging"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_tbgi4")
-theme_override_font_sizes/font_size = 31
-text = "Do Some
-Debugging"
-
-[node name="eight2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Debugging"]
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer6/PanelContainer2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "+5 Combo
-Mult"
+text = "+5 Clicks
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="eight3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Debugging"]
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer6/PanelContainer3"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "100,000
-0 Owned"
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Release game" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="nine" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Release game"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_tbgi4")
-theme_override_font_sizes/font_size = 31
-text = "Publish
-Game"
-
-[node name="nine2" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Release game"]
+[node name="Button5" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "Game resets :D"
+text = "Click To Buy"
 
-[node name="nine3" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Release game"]
+[node name="HBoxContainer7" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer7/PanelContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_tbgi4")
 theme_override_font_sizes/font_size = 31
-text = "1,000,000
-"
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer7/PanelContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "+5 Clicks
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer7/PanelContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button6" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Click To Buy"
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer8/PanelContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer8/PanelContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "+5 Clicks
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer8/PanelContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button7" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Click To Buy"
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer9/PanelContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer9/PanelContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "+5 Clicks
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer9/PanelContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button8" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Click To Buy"
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer10/PanelContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Add
+ Player "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer10/PanelContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "+5 Clicks
+ Per Second "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/HBoxContainer10/PanelContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "100
+ 0 Owned "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button9" type="Button" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 31
+text = "Click To Buy"
 
 [node name="TextureRect2" type="TextureRect" parent="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -522,7 +712,7 @@ color_initial_ramp = SubResource("Gradient_85g3d")
 script = ExtResource("10_choun")
 
 [node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
-position = Vector2(715, -3.63798e-12)
+position = Vector2(1177, 0)
 scale = Vector2(2.37032, 2.37032)
 amount = 25
 lifetime = 0.75
@@ -537,33 +727,15 @@ scale_amount_curve = SubResource("Curve_85g3d")
 color_initial_ramp = SubResource("Gradient_85g3d")
 script = ExtResource("11_ya4ey")
 
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player/Button" to="Panel/Panel/ScrollContainer" method="_on_button_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player/Button2" to="Panel/Panel/ScrollContainer" method="_on_button_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Player/Button3" to="Panel/Panel/ScrollContainer" method="_on_button_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Animation/two" to="Panel/Panel/ScrollContainer" method="_on_two_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Animation/two2" to="Panel/Panel/ScrollContainer" method="_on_two_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Animation/two3" to="Panel/Panel/ScrollContainer" method="_on_two_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Character/three" to="Panel/Panel/ScrollContainer" method="_on_three_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Character/three2" to="Panel/Panel/ScrollContainer" method="_on_three_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Character/three3" to="Panel/Panel/ScrollContainer" method="_on_three_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Mesh/four" to="Panel/Panel/ScrollContainer" method="_on_four_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Mesh/four2" to="Panel/Panel/ScrollContainer" method="_on_four_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Mesh/four3" to="Panel/Panel/ScrollContainer" method="_on_four_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Script/five" to="Panel/Panel/ScrollContainer" method="_on_five_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Script/five2" to="Panel/Panel/ScrollContainer" method="_on_five_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Script/five3" to="Panel/Panel/ScrollContainer" method="_on_five_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Level/six" to="Panel/Panel/ScrollContainer" method="_on_six_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Level/six2" to="Panel/Panel/ScrollContainer" method="_on_six_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Level/six3" to="Panel/Panel/ScrollContainer" method="_on_six_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Texture/seven" to="Panel/Panel/ScrollContainer" method="_on_seven_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Texture/seven2" to="Panel/Panel/ScrollContainer" method="_on_seven_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Texture/seven3" to="Panel/Panel/ScrollContainer" method="_on_seven_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Debugging/eight" to="Panel/Panel/ScrollContainer" method="_on_eight_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Debugging/eight2" to="Panel/Panel/ScrollContainer" method="_on_eight_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Debugging/eight3" to="Panel/Panel/ScrollContainer" method="_on_eight_3_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Release game/nine" to="Panel/Panel/ScrollContainer" method="_on_nine_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Release game/nine2" to="Panel/Panel/ScrollContainer" method="_on_nine_2_pressed"]
-[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Release game/nine3" to="Panel/Panel/ScrollContainer" method="_on_nine_3_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button" to="Panel/Panel/ScrollContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button2" to="Panel/Panel/ScrollContainer" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button3" to="Panel/Panel/ScrollContainer" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button4" to="Panel/Panel/ScrollContainer" method="_on_button_4_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button5" to="Panel/Panel/ScrollContainer" method="_on_button_5_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button6" to="Panel/Panel/ScrollContainer" method="_on_button_6_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button7" to="Panel/Panel/ScrollContainer" method="_on_button_7_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button8" to="Panel/Panel/ScrollContainer" method="_on_button_8_pressed"]
+[connection signal="pressed" from="Panel/Panel/ScrollContainer/HBoxContainer/VBoxContainer/Button9" to="Panel/Panel/ScrollContainer" method="_on_button_9_pressed"]
 [connection signal="timeout" from="Panel/Panel/ScrollContainer/acps timer" to="Panel/Panel/ScrollContainer" method="_on_acps_timer_timeout"]
 [connection signal="timeout" from="Icon/cps timer" to="Icon" method="_on_timer_timeout"]
 [connection signal="timeout" from="Combo meter/mcps Timer" to="Combo meter" method="_on_mcps_timer_timeout"]

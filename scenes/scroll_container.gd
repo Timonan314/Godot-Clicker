@@ -1,40 +1,47 @@
 extends ScrollContainer
 @onready var acps_timer: Timer = $"acps timer"
-@onready var button_1: Button = $HBoxContainer/VBoxContainer/Player/Button
-@onready var button_2: Button = $HBoxContainer/VBoxContainer/Player/Button2
-@onready var button_3: Button = $HBoxContainer/VBoxContainer/Player/Button3
 
-@onready var two_1: Button = $HBoxContainer/VBoxContainer/Animation/two
-@onready var two_2: Button = $HBoxContainer/VBoxContainer/Animation/two2
-@onready var two_3: Button = $HBoxContainer/VBoxContainer/Animation/two3
+@onready var button_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer/PanelContainer/Label
+@onready var button_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer/PanelContainer2/Label
+@onready var button_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer/PanelContainer3/Label
 
-@onready var three_1: Button = $HBoxContainer/VBoxContainer/Character/three
-@onready var three_2: Button = $HBoxContainer/VBoxContainer/Character/three2
-@onready var three_3: Button = $HBoxContainer/VBoxContainer/Character/three3
+@onready var two_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer/Label
+@onready var two_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer2/Label
+@onready var two_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer3/Label
 
-@onready var four_1: Button = $HBoxContainer/VBoxContainer/Mesh/four
-@onready var four_2: Button = $HBoxContainer/VBoxContainer/Mesh/four2
-@onready var four_3: Button = $HBoxContainer/VBoxContainer/Mesh/four3
+@onready var three_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer/Label
+@onready var three_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer2/Label
+@onready var three_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer3/Label
 
-@onready var five_1: Button = $HBoxContainer/VBoxContainer/Script/five
-@onready var five_2: Button = $HBoxContainer/VBoxContainer/Script/five2
-@onready var five_3: Button = $HBoxContainer/VBoxContainer/Script/five3
+@onready var four_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer5/PanelContainer/Label
+@onready var four_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer5/PanelContainer2/Label
+@onready var four_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer5/PanelContainer3/Label
 
-@onready var six_1: Button = $HBoxContainer/VBoxContainer/Level/six
-@onready var six_2: Button = $HBoxContainer/VBoxContainer/Level/six2
-@onready var six_3: Button = $HBoxContainer/VBoxContainer/Level/six3
 
-@onready var seven_1: Button = $HBoxContainer/VBoxContainer/Texture/seven
-@onready var seven_2: Button = $HBoxContainer/VBoxContainer/Texture/seven2
-@onready var seven_3: Button = $HBoxContainer/VBoxContainer/Texture/seven3
+@onready var five_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer6/PanelContainer/Label
+@onready var five_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer6/PanelContainer2/Label
+@onready var five_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer6/PanelContainer3/Label
 
-@onready var eight_1: Button = $HBoxContainer/VBoxContainer/Debugging/eight
-@onready var eight_2: Button = $HBoxContainer/VBoxContainer/Debugging/eight2
-@onready var eight_3: Button = $HBoxContainer/VBoxContainer/Debugging/eight3
 
-@onready var nine_1: Button = $"HBoxContainer/VBoxContainer/Release game/nine"
-@onready var nine_2: Button = $"HBoxContainer/VBoxContainer/Release game/nine2"
-@onready var nine_3: Button = $"HBoxContainer/VBoxContainer/Release game/nine3"
+@onready var six_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer7/PanelContainer/Label
+@onready var six_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer7/PanelContainer2/Label
+@onready var six_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer7/PanelContainer3/Label
+
+
+@onready var seven_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer8/PanelContainer/Label
+@onready var seven_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer8/PanelContainer2/Label
+@onready var seven_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer8/PanelContainer3/Label
+
+
+@onready var eight_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer9/PanelContainer/Label
+@onready var eight_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer9/PanelContainer2/Label
+@onready var eight_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer9/PanelContainer3/Label
+
+
+@onready var nine_1: Label = $HBoxContainer/VBoxContainer/HBoxContainer10/PanelContainer/Label
+@onready var nine_2: Label = $HBoxContainer/VBoxContainer/HBoxContainer10/PanelContainer2/Label
+@onready var nine_3: Label = $HBoxContainer/VBoxContainer/HBoxContainer10/PanelContainer3/Label
+
 
 
 
@@ -79,47 +86,64 @@ var nine_prc = 10000000
 func _ready() -> void:
 	acps_timer.start()
 
-
+	button_1.text = "Add
+Player"
 	button_2.text = str("+", one_val, " Clicks
 	Per Second")
 	button_3.text = str(one_prc, "
 	", one_amt, " Owned")
 
+	two_1.text = "New
+Animation"
 	two_2.text = str("+", two_val, " Clicks
 	Per Second")
 	two_3.text = str(two_prc, "
 	", two_amt, " Owned")
 
+	three_1.text = "New
+Character"
 	three_2.text = str("+", three_val, " Clicks
 	Per Second")
 	three_3.text = str(three_prc, "
 	", three_amt, " Owned")
 
+	four_1.text = "New
+Mesh"
 	four_2.text = str("+", four_val, " Click
 	Value")
 	four_3.text = str(four_prc, "
 	", four_amt, " Owned")
 
+	five_1.text = "New
+Script"
 	five_2.text = str("+", five_val, " Click
 	Value")
 	five_3.text = str(five_prc, "
 	", five_amt, " Owned")
 
+	six_1.text = "New
+Level"
 	six_2.text = str("+", six_val, " Click
 	Value")
 	six_3.text = str(six_prc, "
 	", six_amt, " Owned")
 
+	seven_1.text = "New
+Texture"
 	seven_2.text = str("+", seven_val, "
 	Combo Max")
 	seven_3.text = str(seven_prc, "
 	", seven_amt, " Owned")
 
+	eight_1.text = "Do Some
+Debugging"
 	eight_2.text = str("+", eight_val, " Combo
 	Mult")
 	eight_3.text = str(eight_prc, "
 	", eight_amt, " Owned")
 
+	nine_1.text = "Publish
+Game"
 	nine_2.text = str("Game resets :D")
 	nine_3.text = str("10,000,000")
 
@@ -248,58 +272,18 @@ func nine():
 func _on_button_pressed() -> void:
 	one()
 func _on_button_2_pressed() -> void:
-	one()
+	two()
 func _on_button_3_pressed() -> void:
-	one()
-func _on_two_pressed() -> void:
-	two()
-func _on_two_2_pressed() -> void:
-	two()
-func _on_two_3_pressed() -> void:
-	two()
-func _on_three_pressed() -> void:
 	three()
-func _on_three_2_pressed() -> void:
-	three()
-func _on_three_3_pressed() -> void:
-	three()
-func _on_four_pressed() -> void:
+func _on_button_4_pressed() -> void:
 	four()
-func _on_four_2_pressed() -> void:
-	four()
-func _on_four_3_pressed() -> void:
-	four()
-func _on_five_pressed() -> void:
+func _on_button_5_pressed() -> void:
 	five()
-func _on_five_2_pressed() -> void:
-	five()
-func _on_five_3_pressed() -> void:
-	five()
-func _on_six_pressed() -> void:
+func _on_button_6_pressed() -> void:
 	six()
-func _on_six_2_pressed() -> void:
-	six()
-func _on_six_3_pressed() -> void:
-	six()
-func _on_seven_pressed() -> void:
+func _on_button_7_pressed() -> void:
 	seven()
-func _on_seven_2_pressed() -> void:
-	seven()
-func _on_seven_3_pressed() -> void:
-	seven()
-func _on_eight_pressed() -> void:
+func _on_button_8_pressed() -> void:
 	eight()
-func _on_eight_2_pressed() -> void:
-	eight()
-func _on_eight_3_pressed() -> void:
-	eight()
-func _on_nine_pressed() -> void:
+func _on_button_9_pressed() -> void:
 	nine()
-func _on_nine_2_pressed() -> void:
-	nine()
-func _on_nine_3_pressed() -> void:
-	nine()
-
-
-#func _on_acps_timer_timeout() -> void:
-#	Global.lc += Global.acps

@@ -13,13 +13,13 @@ func _process(_delta: float) -> void:
 	label.text = str("Upgrades:
 Combo Max = ", Global.max_combo,
 "
-Combo Multiplier = ", Global.combo_mult,
+Combo Multiplier = ", Global.combo_mult, "x",
 "
 Click Value = ", Global.acv + 1,
 "
 
 Automation:
-Automatic Clicks Per Second = ", Global.acps,
+Automatic Clicks Per Second = ", int(Global.acps),
 "
 
 Data:
