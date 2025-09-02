@@ -11,7 +11,8 @@ var angle = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	cps_timer.start()
-	last_sec_clicks = Global.clicks
+	#last_sec_clicks = Global.clicks
+	last_sec_clicks = Global.lc
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -36,12 +37,14 @@ func _input(_event: InputEvent) -> void:
 		if Input.is_action_just_released("click") and animation_player.is_playing() == true:
 			release()
 
-
 func _on_timer_timeout() -> void:
-	Global.cps = Global.clicks - last_sec_clicks
+#	Global.cps = Global.clicks - last_sec_clicks
 	cps_timer.start()
-	last_sec_clicks = Global.clicks
-
+#	last_sec_clicks = Global.clicks
+	Global.cps = Global.lc - last_sec_clicks
+	last_sec_clicks = Global.lc
+	
+	
 
 func _on_click_hitbox_mouse_entered() -> void:
 	Global.clickable = true

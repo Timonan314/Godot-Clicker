@@ -126,7 +126,8 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
-	pass
+	Global.clicks += float(Global.acps/60)
+	Global.lc += float(Global.acps/60)
 
 func one():
 	if Global.clicks >= one_prc:
@@ -300,5 +301,5 @@ func _on_nine_3_pressed() -> void:
 	nine()
 
 
-func _on_acps_timer_timeout() -> void:
-	Global.clicks += Global.acps
+#func _on_acps_timer_timeout() -> void:
+#	Global.lc += Global.acps

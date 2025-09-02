@@ -23,9 +23,9 @@ Automatic Clicks Per Second = ", Global.acps,
 "
 
 Data:
-Current Clicks = ", Global.clicks,
+Current Clicks = ", int(round(Global.clicks)),
 "
-Lifetime Clicks = ", Global.lc,
+Lifetime Clicks = ", int(round(Global.lc)),
 "
 Lifetime Manual Clicks = ", Global.lmc,
 "

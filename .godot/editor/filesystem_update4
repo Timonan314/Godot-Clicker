@@ -1,10 +1,6 @@
 res://scenes/main.tscn
 res://bg.tres
-res://scenes/cpu_particles_2d.gd
+res://scenes/scroll_container.gd
 res://scripts/icon.gd
-res://scenes/cpu_particles_2d_2.gd
-res://scripts/global.gd
-res://scripts/combo_meter.gd
 res://scripts/panel.gd
 res://scenes/stats_button.gd
-res://scenes/scroll_container.gd

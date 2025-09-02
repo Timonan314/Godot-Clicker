@@ -8,6 +8,5 @@ func _ready() -> void:
 	pass
 
 func _process(_delta: float) -> void:
-	clicks.text = str(Global.clicks)
-	cps_per_second.text = str(Global.cps, " Per Second")
-	
+	clicks.text = str(int(round(Global.clicks)))
+	cps_per_second.text = str(int(round(Global.cps)), " Per Second")
