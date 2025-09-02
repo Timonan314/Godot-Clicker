@@ -1,0 +1,2 @@
+This game is very simple, you just click the left icon to add "clicks" which are a sort of currency, that you can use to buy upgrades and automatic clickers, so that you can make more clicks, until you can afford the final item, releasing the game, which causes the game to reset.
+I thought it would be fun to make gamedev themed, just because its kinda meta and more interesting than just basic clicker theming.
